@@ -21,10 +21,10 @@ public class GateController {
   }
 
   @PostMapping("/checkpoint/checkin")
-  public ResponseGate checkin(@RequestBody CheckpointDTO checkpoint) {
+  public ResponseGate checkin() {
     try {
-      checkpointService.checkin(checkpoint);
-      return new ResponseGate(true);
+      System.out.println("Hola :3");
+      return null;
     } catch (Exception exception) {
       logger.error("Error in checkin", exception);
       return new ResponseGate(false);

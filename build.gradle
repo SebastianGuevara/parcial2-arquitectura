@@ -50,6 +50,8 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation group: 'com.h2database', name: 'h2', version: '2.1.214'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-netflix-eureka-client', version: '3.1.4'
+
 }
 
 tasks.named('test') {
